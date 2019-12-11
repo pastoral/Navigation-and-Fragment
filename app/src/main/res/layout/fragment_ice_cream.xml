@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             style="@style/BigTextStyle"
             android:text="Try Ice Cream"
+            android:id="@+id/fav_icecream"
             android:layout_weight="1"/>
         <Button
             android:layout_width="wrap_content"

@@ -19,6 +19,13 @@
             style="@style/BigTextStyle"
             android:text="Try some Food"
             android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iptext"
+            android:hint="What is your favourite Ice cream"
+            style="@style/MediumTextStyle"
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

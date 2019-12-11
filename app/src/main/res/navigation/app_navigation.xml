@@ -15,24 +15,8 @@
         android:id="@+id/iceCreamFragment"
         android:name="com.example.scrapsweetteeth.IceCreamFragment"
         android:label="IceCreamFragment" >
-        <action
-            android:id="@+id/action_iceCreamFragment_to_donutsFragment"
-            app:destination="@id/donutsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/donutsFragment"
-        android:name="com.example.scrapsweetteeth.DonutsFragment"
-        android:label="DonutsFragment" >
-        <action
-            android:id="@+id/action_donutsFragment_to_cahmpionFragment"
-            app:destination="@id/cahmpionFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/cahmpionFragment"
-        android:name="com.example.scrapsweetteeth.CahmpionFragment"
-        android:label="CahmpionFragment" >
-        <action
-            android:id="@+id/action_cahmpionFragment_to_bakeryFragment"
-            app:destination="@id/bakeryFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
     </fragment>
 </navigation>

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.scrapsweetteeth.databinding.FragmentBakeryBinding
 import kotlinx.android.synthetic.main.fragment_bakery.*
 
@@ -27,7 +28,9 @@ class BakeryFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_bakery,container,false)
         binding.btnBakery.setOnClickListener{
-            Navigation.findNavController(it).navigate(R.id.action_bakeryFragment_to_iceCreamFragment)
+//            Navigation.findNavController(it).navigate(R.id.action_bakeryFragment_to_iceCreamFragment)
+            val action = BakeryFragmentDirections.actionBakeryFragmentToIceCreamFragment(binding.iptext.text.toString())
+            it.findNavController().navigate(action)
         }
         return binding.root
     }
